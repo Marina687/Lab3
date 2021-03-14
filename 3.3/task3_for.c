@@ -1,12 +1,22 @@
 #include "stdio.h"
 #define _USE_MATH_DEFINES
+#include "math.h"
 
-double summ2(double eps)
+void print(int n, int k)
 { 
-    for (int i = 0; i > 0; i++)
+    int res = 0;
+    scanf("%d %d", &k,&n);
+    for (int i = 0; i <= n; i++)
     {
-        if (fabs(summ) <= eps)
+        if (i == k)
+        {
             continue;
-        return pow((-1),i)*(i+1)/(pow(i,3)-(pow(i,2)+1)+summ;
+        }       
+        else
+        {
+            res = pow((-1),i)*(i+1)/(pow(i,3)-pow(i,2)+1)+res;
+            printf("%d", &res);
+        }
+        i++;
     }
 }
